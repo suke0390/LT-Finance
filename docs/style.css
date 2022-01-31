@@ -591,6 +591,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1024px){
+  .lg\:ml-10{
+    margin-left: 2.5rem;
+  }
+
+  .lg\:ml-28{
+    margin-left: 7rem;
+  }
+
   .lg\:block{
     display: block;
   }
