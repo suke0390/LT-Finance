@@ -6,14 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LT-Finance</title>
     <link rel="icon" href="./img/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body class="font-body">
     <div class="main">
       <header class="py-6">
-        <div class="max-w-7xl flex justify-between items-center px-8 mx-auto">
+        <!-- <div class="max-w-7xl flex justify-between items-center px-8 mx-auto"> -->
+        <div class="flex justify-between items-center px-8 mx-auto">
           <button class="md:hidden flex items-center" id="burger">
-            <box-icon name="menu-alt-left"></box-icon>
+            <span class="material-icons-outlined"> menu_open </span>
           </button>
           <div class="flex items-center">
             <a href="" class="flex items-center">
@@ -34,15 +39,49 @@
           </div>
 
           <div class="flex items-center space-x-8">
-            <box-icon name="bell"></box-icon>
-            <img
-              class="hidden md:block h-10 w-10 rounded-full"
-              src="./img/Avatar-3.png"
-              alt=""
-            />
+            <ul class="flex items-center">
+              <li>
+                <a href="#">
+                  <span class="material-icons-outlined text-gray-500">
+                    notifications
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <div class="hidden md:block">
+              <div class="flex items-center">
+                <div class="hidden lg:block text-center mr-3">
+                  <p class="text-sm">Thomas Brown</p>
+                  <p class="text-sm text-gray-400">Developer</p>
+                </div>
+                <button class="flex items-center" id="profile">
+                  <img
+                    class="w-10 h-10 mr-1 rounded-full object-cover"
+                    src="https://cdn.dribbble.com/users/759083/screenshots/17196153/media/a437d241c694189e6738c54dcdf9cfd6.jpg"
+                    alt="profile"
+                  />
+                  <span class="material-icons-outlined md-18 text-gray-400">
+                    expand_more
+                  </span>
+                </button>
+              </div>
+              <div
+                id="info"
+                class="hidden absolute right-6 mt-1 py-2 w-32 bg-gray-100 shadow-md rounded-lg text-sm overflow-hidden"
+              >
+                <a href="#" class="block py-1 px-4 hover:bg-gray-200"
+                  >Service</a
+                >
+                <a href="#" class="block py-1 px-4 hover:bg-gray-200 border-b"
+                  >Settings</a
+                >
+                <a href="#" class="block mt-3 py-1 px-4 hover:bg-gray-200"
+                  >Logout</a
+                >
+              </div>
+            </div>
           </div>
         </div>
-
         <div id="mobile-menu" class="hidden md:hidden">
           <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200"
             >Features</a
@@ -54,7 +93,6 @@
       </header>
     </div>
 
-    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>
